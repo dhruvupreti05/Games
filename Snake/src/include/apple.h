@@ -12,9 +12,9 @@ private:
 public:
     Apple(const std::vector<sf::RectangleShape>& invalidPos); 
 
-    void draw(sf::RenderWindow *window);
+    void draw(sf::RenderWindow& window);
     void newApple(const std::vector<sf::RectangleShape>& invalidPos);
-    sf::RectangleShape* getApple();
+    sf::RectangleShape& getApple();
 };
 
 #endif

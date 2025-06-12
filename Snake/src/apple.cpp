@@ -7,14 +7,14 @@ Apple::Apple(const std::vector<sf::RectangleShape>& invalidPos)
     newApple(invalidPos); 
 }
 
-void Apple::draw(sf::RenderWindow *window)
+void Apple::draw(sf::RenderWindow& window)
 {
-    window->draw(apple);
+    window.draw(apple);
 }
 
-sf::RectangleShape *Apple::getApple()
+sf::RectangleShape& Apple::getApple()
 {
-    return &apple;
+    return apple;
 }
 
 void Apple::newApple(const std::vector<sf::RectangleShape>& invalidPos)
