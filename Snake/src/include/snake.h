@@ -14,9 +14,9 @@ private:
 public:
     Snake(); 
 
-    bool move(Apple* apple, sf::Vector2f& pos);
+    bool move(Apple& apple, const sf::Vector2f& pos);
     const std::vector<sf::RectangleShape>& getBody() const;
-    void draw(sf::RenderWindow *window);   
+    void draw(sf::RenderWindow& window);   
 };
 
 #endif 

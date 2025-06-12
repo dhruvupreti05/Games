@@ -11,15 +11,15 @@ int main()
 
     sf::RenderWindow window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Snake Game", sf::Style::Close | sf::Style::Titlebar);
     
-    std::vector<sf::Vertex> grid;
-    for (int y = 0; y <= WINDOW_HEIGHT; y += GRID_HEIGHT) {
-        grid.push_back(sf::Vertex(sf::Vector2f(0.f, static_cast<float>(y)), sf::Color::White));
-        grid.push_back(sf::Vertex(sf::Vector2f(static_cast<float>(WINDOW_WIDTH), static_cast<float>(y)), sf::Color::White));
-    }
-    for (int x = 0; x <= WINDOW_WIDTH; x += GRID_WIDTH) {
-        grid.push_back(sf::Vertex(sf::Vector2f(static_cast<float>(x), 0.f), sf::Color::White));
-        grid.push_back(sf::Vertex(sf::Vector2f(static_cast<float>(x), static_cast<float>(WINDOW_HEIGHT)), sf::Color::White));
-    }
+    //std::vector<sf::Vertex> grid;
+    //for (int y = 0; y <= WINDOW_HEIGHT; y += GRID_HEIGHT) {
+    //    grid.push_back(sf::Vertex(sf::Vector2f(0.f, static_cast<float>(y)), sf::Color::White));
+    //    grid.push_back(sf::Vertex(sf::Vector2f(static_cast<float>(WINDOW_WIDTH), static_cast<float>(y)), sf::Color::White));
+    //}
+    //for (int x = 0; x <= WINDOW_WIDTH; x += GRID_WIDTH) {
+    //    grid.push_back(sf::Vertex(sf::Vector2f(static_cast<float>(x), 0.f), sf::Color::White));
+    //    grid.push_back(sf::Vertex(sf::Vector2f(static_cast<float>(x), static_cast<float>(WINDOW_HEIGHT)), sf::Color::White));
+    //}
 
     Snake snake;
     Apple apple(snake.getBody());
@@ -64,12 +64,12 @@ int main()
         {
             clock.restart();
 
-            alive = snake.move(&apple, direction);
+            alive = snake.move(apple, direction);
 
             window.clear();
-            window.draw(&grid[0], grid.size(), sf::Lines);
-            snake.draw(&window);
-            apple.draw(&window);
+            //window.draw(&grid[0], grid.size(), sf::Lines);
+            snake.draw(window);
+            apple.draw(window);
             window.display();
         }
     }

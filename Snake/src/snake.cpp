@@ -12,7 +12,7 @@ Snake::Snake()
     body.push_back(head);
 }
 
-bool Snake::move(Apple* apple, sf::Vector2f& pos)
+bool Snake::move(Apple& apple, const sf::Vector2f& pos)
 {
     sf::Vector2f nextPos = body[0].getPosition() + pos;
 
@@ -27,8 +27,8 @@ bool Snake::move(Apple* apple, sf::Vector2f& pos)
             return false; 
     }
 
-    if (apple->getApple()->getPosition() == nextPos)
-        apple->newApple(body);
+    if (apple.getApple().getPosition() == nextPos)
+        apple.newApple(body);
     else
         body.pop_back();
 
@@ -40,11 +40,11 @@ bool Snake::move(Apple* apple, sf::Vector2f& pos)
     return true;
 }
 
-void Snake::draw(sf::RenderWindow* window)
+void Snake::draw(sf::RenderWindow& window)
 {
     for (sf::RectangleShape& part : body)
     {
-        window->draw(part);
+        window.draw(part);
     }
 }
 
