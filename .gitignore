@@ -1,5 +1,5 @@
-*/.build
-*/.run_*
+*/build
+*/run_*
 */.vscode
-*/.DS_store
+*/.DS_Store
 ./.gitignore
