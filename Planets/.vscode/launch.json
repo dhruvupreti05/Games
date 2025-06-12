@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Run Snake Game",
+            "name": "Planet Simulation",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/snake",

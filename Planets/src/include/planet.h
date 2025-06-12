@@ -8,22 +8,27 @@ class Planet
 {
 private:
 
-    static constexpr float G = 1;
+    static constexpr float G = 100;
+    static constexpr int length = 25;
+
+    int iteration;
+    std::vector<sf::Vector2f> pastPositions;
 
     float mass;
-    sf::Vector2f velocity;
     sf::CircleShape body;
+    sf::Vector2f velocity;
 
 public:
 
     static std::vector<Planet> planets;
+    Planet(float mass, float radius, const sf::Vector2f& position, const sf::Vector2f& velocity);
 
     bool move(float dt);
-    float distance(Planet& planet) const;
+    bool hitBoundary() const;
     const sf::Vector2f gravity() const;
-    const sf::Vector2f impact(float dt) const;
+    float distance(Planet& planet) const;
     void draw(sf::RenderWindow& window) const;
-    Planet(float mass, const sf::Vector2f& position, const sf::Vector2f& velocity);
+    const sf::Vector2f impulse(float dt) const;
 
     inline const float getMass() const { return mass; }
     inline const sf::CircleShape& getBody() const { return body; }

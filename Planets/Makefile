@@ -7,7 +7,7 @@ CC = g++
 CXXFLAGS = -std=c++17 -I $(LIBRARY)/include -I $(INCDIR)
 LDFLAGS = -L $(LIBRARY)/lib -lsfml-graphics -lsfml-window -lsfml-system
 
-APPNAME = planet
+APPNAME = run_planet
 
 SOURCES = $(wildcard $(SRCDIR)/*.cpp)
 OBJECTS = $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SOURCES))

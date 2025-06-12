@@ -1,12 +1,5 @@
-./Snake/build
-./Snake/snake
-./Snake/.vscode
-./Snake/.DS_store
-
-./SFML/build
-./SFML/sfml
-./SFML/.vscode
-./SFML/.DS_store
-
-./.DS_store
+*/.build
+*/.run_*
+*/.vscode
+*/.DS_store
 ./.gitignore
