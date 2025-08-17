@@ -1,0 +1,105 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-std=c++17",
+      "-I./src/include",
+      "-I/Users/dhruvupreti/Projects/Games/OpenGL/glad/include",
+      "-I/opt/homebrew/include",
+      "-I/opt/homebrew/opt/glfw/include",
+      "-I/opt/homebrew/opt/glew/include",
+      "-o",
+      "build/EBO.o",
+      "src/EBO.cpp"
+    ],
+    "directory": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle",
+    "file": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle/src/EBO.cpp",
+    "output": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle/build/EBO.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-std=c++17",
+      "-I./src/include",
+      "-I/Users/dhruvupreti/Projects/Games/OpenGL/glad/include",
+      "-I/opt/homebrew/include",
+      "-I/opt/homebrew/opt/glfw/include",
+      "-I/opt/homebrew/opt/glew/include",
+      "-o",
+      "build/VAO.o",
+      "src/VAO.cpp"
+    ],
+    "directory": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle",
+    "file": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle/src/VAO.cpp",
+    "output": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle/build/VAO.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-std=c++17",
+      "-I./src/include",
+      "-I/Users/dhruvupreti/Projects/Games/OpenGL/glad/include",
+      "-I/opt/homebrew/include",
+      "-I/opt/homebrew/opt/glfw/include",
+      "-I/opt/homebrew/opt/glew/include",
+      "-o",
+      "build/VBO.o",
+      "src/VBO.cpp"
+    ],
+    "directory": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle",
+    "file": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle/src/VBO.cpp",
+    "output": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle/build/VBO.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-std=c++17",
+      "-I./src/include",
+      "-I/Users/dhruvupreti/Projects/Games/OpenGL/glad/include",
+      "-I/opt/homebrew/include",
+      "-I/opt/homebrew/opt/glfw/include",
+      "-I/opt/homebrew/opt/glew/include",
+      "-o",
+      "build/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle",
+    "file": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle/src/main.cpp",
+    "output": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle/build/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-std=c++17",
+      "-I./src/include",
+      "-I/Users/dhruvupreti/Projects/Games/OpenGL/glad/include",
+      "-I/opt/homebrew/include",
+      "-I/opt/homebrew/opt/glfw/include",
+      "-I/opt/homebrew/opt/glew/include",
+      "-o",
+      "build/shader.o",
+      "src/shader.cpp"
+    ],
+    "directory": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle",
+    "file": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle/src/shader.cpp",
+    "output": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle/build/shader.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I/Users/dhruvupreti/Projects/Games/OpenGL/glad/include",
+      "-o",
+      "build/glad.o",
+      "/Users/dhruvupreti/Projects/Games/OpenGL/glad.c"
+    ],
+    "directory": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle",
+    "file": "/Users/dhruvupreti/Projects/Games/OpenGL/glad.c",
+    "output": "/Users/dhruvupreti/Projects/Games/OpenGL/Triangle/build/glad.o"
+  }
+]

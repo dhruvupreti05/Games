@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Run OpenGL (lldb)",
+        "type": "cppdbg",
+        "request": "launch",
+        "MIMode": "lldb",
+        "program": "${workspaceFolder}/run_opengl",
+        "cwd": "${workspaceFolder}",
+        "args": [],
+        "stopAtEntry": false,
+        "preLaunchTask": "make: build",
+        "environment": []
+      }
+    ]
+  }
+  
