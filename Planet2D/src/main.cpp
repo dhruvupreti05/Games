@@ -8,7 +8,7 @@ int main()
 {
     bool stop = false;
     sf::Clock clock;
-    const float frameDelay = 0.0001f;
+    const float frameDelay = 0.1f;
 
     sf::RenderWindow window(sf::VideoMode(WINDOW_HEIGHT, WINDOW_WIDTH), "Planet Simulator", sf::Style::Close | sf::Style::Titlebar);
     Planet::planets.push_back(Planet(25.0f, 5.0f, sf::Vector2f(400, 250), sf::Vector2f(-250.0f, 250.0f)));
