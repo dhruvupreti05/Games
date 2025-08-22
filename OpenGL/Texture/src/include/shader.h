@@ -2,10 +2,10 @@
 #define SHADER_CLASS
 
 #include <glad/glad.h>
-#include <string>
+#include <iostream> 
 #include <fstream> 
 #include <sstream> 
-#include <iostream> 
+#include <string>
 #include <cerrno>
 
 std::string get_file_contents(const char* filename);
